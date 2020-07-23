@@ -41,47 +41,8 @@ module.exports = {
 	text: {
 		toDoItem: {
 			fontSize: [1, 2, 3, 4, 5],
-		},
-	},
-	links: {
-		cardLink: {
-			fontSize: ['1em'],
-			textDecoration: 'none',
-			color: 'secondary',
-			transition: 'all .5s ease',
-			margin: 2,
-			'&:hover': {
-				transform: 'scale(1.3)',
-				color: 'primary',
-				textDecoration: 'underline overline',
-			},
-		},
-		navLink: {
-			textTransform: 'uppercase',
-			padding: [1, 2, 3, null, null],
-			fontSize: [1, 2, null, null, 3],
-			color: 'primary',
-			transition: 'all .2s ease-in',
-			textShadow: '2px 1px 2px rgba(255,255,255,1)',
-			cursor: 'pointer',
-			textDecoration: 'none',
-			'&:hover': {
-				color: 'secondary',
-				transform: 'scale(1.1)',
-			},
-			'&:active': {
-				color: 'accent',
-			},
-		},
-		mobileNavLink: {
-			textTransform: 'uppercase',
-			padding: [1, 2, 3, null, null],
-			fontSize: [1, 2, null, null, 3],
-			color: 'primary',
-			transition: 'all .2s ease-in',
-			textShadow: '2px 1px 2px rgba(255,255,255,1)',
-			cursor: 'pointer',
-			textDecoration: 'none',
+			textTransform: 'capitalize',
+			textShadow: '4px 4px 4px black',
 		},
 	},
 	forms: {
@@ -119,23 +80,13 @@ module.exports = {
 		},
 	},
 	variants: {
-		navBarStyle: {
-			alignItems: 'center',
-			justifyContent: 'flex-end',
-			position: 'fixed',
-			top: 0,
-			width: '100%',
-			minHeight: 90,
-			zIndex: 9999,
-			// backgroundImage: `linear-gradient(90deg, rgba(19,9,46,0.7) 0%, rgba(30,35,44,0.5) 50%,rgba(9,18,46,0.7) 100%), url(${background})`,
-			marginBottom: 100,
-			boxShadow: ' 0px -2px 25px 0px rgba(0,0,0,0.55)',
-		},
 		toDoFlex: {
+			flexDirection: 'column',
+			alignItems: 'center',
 			backgroundColor: 'secondary',
 			color: 'muted',
 			padding: 3,
-			margin: 1,
+			margin: 3,
 			borderRadius: '10px',
 			border: 'toDo',
 			boxShadow: '10px 10px 10px -5px rgba(0,0,0,0.75)',
