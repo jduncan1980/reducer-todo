@@ -27,7 +27,7 @@ export default function TodoForm({ dispatch }) {
 					completed: false,
 					id: Math.round(Math.random() * 100000),
 					completedTime: '',
-					due: date,
+					due: new Date(date).toString(),
 				},
 			});
 		}
